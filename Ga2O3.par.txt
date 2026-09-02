@@ -1,0 +1,200 @@
+#Edited by T.Sugiura
+
+Epsilon
+  {
+    epsilon = 10.2
+  }
+
+Epsilon_aniso
+  {
+    epsilon = 10.2
+  }
+
+Kappa
+  {
+    #perp. to c-axis
+    Formula = 0
+    1/kappa = 9.17e-2 #1/10.9
+    1/kappa_b = 2.75e-4 #[70Tou1,79Bur,93Mor2 in 00Lad] , 4H-SiC+6H-SiC+3C-SiC
+    1/kappa_c = 1.3e-6 #[70Tou1,79Bur,93Mor2 in 00Lad] , 4H-SiC+6H-SiC+3C-SiC
+
+  }
+
+LatticeHeatCapacity
+  {	
+    * Lattice Heat Capacity
+    cv = 0.56 #fit to the formula of [96Mot] in [00Lad]
+    cv_b = 2.242e-2 #fit to the formula of [96Mot] in [00Lad]
+    cv_c = -3.130e-5 #fit to the formula of [96Mot] in [00Lad]
+    cv_d = 1.546e-8 #fit to the formula of [96Mot] in [00Lad]
+  }
+
+Bandgap
+  { 
+    * Eg = Eg0 + dEg0 + alpha Tpar^2 / (beta + Tpar) - alpha T^2 / (beta + T)
+    * dEg0(<bgn_model_name>) is a band gap correction term.  It is used together with
+    * an appropriate BGN model, if this BGN model is chosen in Physics section
+    * Parameter 'Tpar' specifies the value of lattice 
+    * temperature, at which parameters below are defined
+    * Chi0 is electron affinity.
+    Chi0 =	4.0 #[07Dav]
+    Bgn2Chi =	0.0
+    Eg0	=	4.85 #Egx=3.265eV at 4K [64Cho][65Pat] , 3.235eV at 300K [02Lan], Ex=0.02eV [76Dub]
+    alpha =	0.0 #[00Lad]
+    beta =	0.0 #[00Lad]
+  }
+
+Slotboom
+  { 
+    * deltaEg = dEg0 + Ebgn ( ln(N/Nref) + [ (ln(N/Nref))^2 + 0.5]^1/2 )
+    * dEg0 is defined in BandGap section 
+    #Ebgn = 0.02 #4H-SiC ntype [00Lad]
+    Nref = 1.e+17 #4H-SiC ntype [00Lad]
+    Ebgn = 0.009 #4H-SiC ptype, 6H-SiC ntype, ptype [00Lad]
+}
+
+JainRoulston
+	{
+		A_n		 =	 1.791E-08 # 4H-SiC n-type [99Per]
+		B_n		 =	 8.927E-07 # 4H-SiC n-type [99Per]
+		C_n		 =	 2.200E-12 # 4H-SiC n-type [99Per]
+		D_n		 =	 6.240E-12 # 4H-SiC n-type [99Per]
+		A_p		 =	-3.507E-08 # 4H-SiC p-type [99Per]
+		B_p		 =	 2.312E-06 # 4H-SiC p-type [99Per]
+		C_p		 =	 6.740E-12 # 4H-SiC p-type [99Per]
+		D_p		 =	 1.070E-12 # 4H-SiC p-type [99Per]
+
+
+		#A_n		 =	 1.500E-08 # 4H-SiC n-type [98Lin]
+		#B_n		 =	 6.008E-07 # 4H-SiC n-type [98Lin]
+		#C_n		 =	 2.930E-12 # 4H-SiC n-type [98Lin]
+		#D_n		 =	 8.740E-12 # 4H-SiC n-type [98Lin]
+		#A_p		 =	 1.300E-08 # 4H-SiC p-type [98Lin]
+		#B_p		 =	 4.965E-07 # 4H-SiC p-type [98Lin]
+		#C_p		 =	 1.150E-12 # 4H-SiC p-type [98Lin]
+		#D_p		 =	 3.870E-13 # 4H-SiC p-type [98Lin]
+
+	 }
+
+eDOSMass
+	{
+  * For effective mass specification Formula1 (me approximation):
+  * or Formula2 (Nc300) can be used :
+	Formula	= 1	# [1]
+  * Formula1:
+  * me/m0 = [ (6 * mt)^2 *  ml ]^(1/3) + mm
+  * mt = a[Eg(0)/Eg(T)] 
+  * Nc(T) = 2(2pi*kB/h_Planck^2*me*T)^3/2 = 2.5094e19 ((me/m0)*(T/300))^3/2 
+
+						#Ga2O3
+		Formula		=	2
+		Nc300		=	3.7180e18
+
+
+	}
+
+hDOSMass
+	{
+  * For effective mass specification Formula1 (mh approximation):
+  * or Formula2 (Nv300) can be used :
+	Formula	= 1	# [1]
+  * Formula1:
+  * mh =  m0*{[(a+bT+cT^2+dT^3+eT^4)/(1+fT+gT^2+hT^3+iT^4)]^(2/3) + mm}
+  * Nv(T) = 2(2pi*kB/h_Planck^2*mh*T)^3/2 = 2.5094e19 ((mh/m0)*(T/300))^3/2 
+
+		Formula		=	2
+		Nv300		=	2.411e19
+	}
+
+ConstantMobility
+	{
+		mumax		=	118,	20.	  #[04Aya]
+		Exponent	       =	        2.4,	2.15	      #[04Aya]
+	}
+
+HighFieldDependence
+	{
+* Caughey-Thomas model:
+  * mu_highfield = ( (alpha+1)*mu_lowfield ) / 
+  *        ( alpha + ( 1 + ( (alpha+1)*mu_lowfield*E/vsat)^beta )^(1/beta) ) 
+  * beta = beta0 (T/T0)^betaexp.
+	beta0	= 1.2 ,	1.2	# [1]
+	betaexp	= 1.0000e+00 ,	1.0000e+00	# [1]
+	alpha	= 0.0000e+00 ,	0.0000e+00	# [1]
+
+  * Smoothing parameter for HydroHighField Caughey-Thomas model:
+  * if Tl < Tc < (1+K_dT)*Tl, then smoothing between low field mobility
+  * and HydroHighField mobility is used.
+	K_dT	= 0.2 ,	0.2	# [1]
+  * Transferred-Electron Effect:
+  * mu_highfield = (mu_lowfield+(vsat/E)*(E/E0_TrEf)^4)/(1+(E/E0_TrEf)^4)
+	E0_TrEf	= 4.0000e+03 ,	4.0000e+03	# [1]
+	Ksmooth_TrEf	= 1 ,	1	# [1]
+
+ * For vsat either Formula1 or Formula2 can be used.
+	Vsat_Formula	= 1 ,	1	# [1]
+ * Formula1 for saturation velocity:
+ *            vsat = vsat0 (T/T0)^(-Vsatexp)
+ * (Parameter Vsat_Formula has to be not equal to 2)
+		vsat0		=	1.2e+07,1.2e+07 #Ga2O3
+		vsatexp		=	0.44,	0.44	#4H-SiC [00Lad] [00Kha] for electron
+	}
+
+Scharfetter
+	{
+		taumin		=	0.0,	0.0
+		taumax		=	2.50e-6, 0.5e-6 # process dependent
+		Nref		=	3.0e17, 3.0e17	 # [94Ruf]
+		gamma		=	 0.3,	0.3	# [94Ruf]
+		Talpha		=	 1.72,	 1.72	# process dependent
+		Etrap		=	0.0000e+00	# trap level at mid band gap
+	}
+
+Auger
+	{
+		A		=	5e-31,	2e-31	#4H-SiC [97Gal]
+	       #A		=	3e-29,	3e-29	   #6H-SiC [98Ram]
+		B		=	0.0,	0.0	#to disable temp.dep.
+		C		=	0.0,	0.0	#to disable temp.dep.
+		H		=	0.0,	0.0
+		N0		=	1.0e+18,1.0e+18
+	}
+
+Ionization {
+Species ("SiliconConcentration") {
+#beta-Ga2O3 Si
+	type = donor
+        E_0           =       0.110          #beta-Ga2O3 [09Koi]
+        alpha         =       3.60e-08       #beta-Ga2O3 [09Koi]
+        g             =       2.0
+        Xsec          =       1.0000e-12
+   }
+
+Species ("SiliconActiveConcentration") {
+#beta-Ga2O3 Si
+	type = donor
+        E_0           =       0.110          #beta-Ga2O3 [09Koi]
+        alpha         =       3.60e-08       #beta-Ga2O3 [09Koi]
+        g             =       2.0
+        Xsec          =       1.0000e-12
+   }
+
+Species ("TinConcentration") {
+#beta-Ga2O3 Si
+	type = donor
+        E_0           =       0.110          #beta-Ga2O3 [09Koi]
+        alpha         =       3.60e-08       #beta-Ga2O3 [09Koi]
+        g             =       2.0
+        Xsec          =       1.0000e-12
+   }
+
+Species ("TinActiveConcentration") {
+#beta-Ga2O3 Si
+	type = donor
+        E_0           =       0.110          #beta-Ga2O3 [09Koi]
+        alpha         =       3.60e-08       #beta-Ga2O3 [09Koi]
+        g             =       2.0
+        Xsec          =       1.0000e-12
+   }
+}
+

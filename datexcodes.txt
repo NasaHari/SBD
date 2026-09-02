@@ -1,0 +1,114 @@
+DATEX2.1
+Datacode
+"$DateTime: 2019/11/04 21:30:00 $"
+"Data codes for GaN device simulation"
+
+Materials {
+
+Ga2O3 {
+label = "Ga2O3"
+group = Semiconductor
+color = #ff0123
+}
+
+GaN {
+label = "GaN"
+group = Semiconductor
+color = #ffb6c1
+}
+
+}
+
+Variables {
+
+SiliconConcentration {
+doping = donor (
+active = SiliconActiveConcentration
+ionized = SiliconPlusConcentration
+material = Ga2O3
+)
+}
+
+SiliconActiveConcentration {
+label     = "substitutional Silicon concentration"
+symbol    = "SiActive"
+unit      = "cm^-3"
+factor    = 1.000E+12
+precision = 4
+interpol  = arsinh
+material  = Semiconductor
+property("floops") = "SiActive"
+}
+
+SiliconPlusConcentration {
+label     = "substitutional Silicon concentration"
+symbol    = "SiIonized"
+unit      = "cm^-3"
+factor    = 1.000E+12
+precision = 4
+interpol  = arsinh
+material  = Semiconductor
+property("floops") = "SiIonized"
+}
+
+TinConcentration {
+doping = donor (
+active = TinActiveConcentration
+ionized = TinPlusConcentration
+material = Ga2O3
+)
+}
+
+TinActiveConcentration {
+label     = "substitutional Tin concentration"
+symbol    = "SnActive"
+unit      = "cm^-3"
+factor    = 1.000E+12
+precision = 4
+interpol  = arsinh
+material  = Semiconductor
+property("floops") = "SnActive"
+}
+
+TinPlusConcentration {
+label     = "substitutional Tin concentration"
+symbol    = "SnIonized"
+unit      = "cm^-3"
+factor    = 1.000E+12
+precision = 4
+interpol  = arsinh
+material  = Semiconductor
+property("floops") = "SnIonized"
+}
+
+MagnesiumConcentration {
+doping = acceptor (
+active = MagnesiumActiveConcentration
+ionized = MagnesiumMinusConcentration
+material = GaN
+)
+}
+
+MagnesiumActiveConcentration {
+label     = "substitutional Magnesium concentration"
+symbol    = "MgActive"
+unit      = "cm^-3"
+factor    = 1.000E+12
+precision = 4
+interpol  = arsinh
+material  = Semiconductor
+property("floops") = "MgActive"
+}
+
+MagnesiumMinuseConcentration {
+label     = "substitutional Magnesium concentration"
+symbol    = "MgIonized"
+unit      = "cm^-3"
+factor    = 1.000E+12
+precision = 4
+interpol  = arsinh
+material  = Semiconductor
+property("floops") = "MgIonized"
+}
+
+}

@@ -1,0 +1,124 @@
+File {
+ *-Input
+  Grid  = "/home/2023phxp0439g/synopsys_chipin_work/STDB/tmp/R_GaN_Ga2O3/Ga2O3_GaN_SBD_Nd@Nd@_GW@GW@_msh.tdr"
+  Parameter = "@parameter@"
+ *-Output
+  Plot = "Ga2O3_SBD_Nd@Nd@_AV@AV@_GW@GW@_Eb@Eb@_des.tdr"
+  Current = "Ga2O3_SBD_Nd@Nd@_AV@AV@_GW@GW@_Eb@Eb@_des.plt"
+  Output  = "Ga2O3_SBD_Nd@Nd@_AV@AV@__GW@GW@_Eb@Eb@_des.log"
+  Parameter = "/home/2023phxp0439g/synopsys_chipin_work/STDB/tmp/R_GaN_Ga2O3/Ga2O3.par"
+  Parameter = "/home/2023phxp0439g/synopsys_chipin_work/STDB/tmp/R_GaN_Ga2O3/GaN.par"
+  Parameter = "/home/2023phxp0439g/synopsys_chipin_work/STDB/tmp/R_GaN_Ga2O3/sdevice.par"
+Parameter = "/home/2023phxp0439g/synopsys_chipin_work/STDB/tmp/R_GaN_Ga2O3/datexcodes.txt"
+}
+
+Electrode {
+{ name="Top" voltage=0.0 region=GaN Schottky Barrier=@Eb@  DistResist = @<@Ron@*1e-3>@ eRecVelocity = 1e7 hRecVelocity = 1e7}
+{ name="Bottom" voltage=0.0 DistResist = @<@Ron@*1e-3>@ eRecVelocity = 1e7 hRecVelocity = 1e7}
+}
+
+Physics {
+#- Ambient Temperature
+Temperature = @<273.15+25>@
+#- Common Physical Models
+#-Anisotropic
+Aniso (
+Poisson
+Mobility
+Avalanche
+direction = (0, 1) #y-axis direction with 0-degree Off
+)
+#-GR
+Recombination(
+SRH(DopingDependence TempDependence)
+Auger
+Avalanche(vanOverstraetendeMan)
+ConstantCarrierGeneration (value=1e15)
+)
+Fermi
+IncompleteIonization
+#-Mobility
+Mobility (
+ConstantMobility
+#ENormal
+IncompleteIonization
+HighFieldSaturation
+)
+#-BGN
+EffectiveIntrinsicDensity ( Nobandgapnarrowing )
+#-BarrierTunneling
+eBarrierTunneling "NLM"
+hBarrierTunneling "NLM"
+}
+
+Physics(Electrode = "Top") {
+BarrierLowering
+}
+
+Plot {
+ConductionBandEnergy ValenceBandEnergy
+AvalancheGeneration eAvalanche hAvalanche
+ElectricField
+DopingConcentration DonorConcentration AcceptorConcentration
+eDensity	hDensity
+eCurrent	hCurrent
+eMobility	hMobility
+eVelocity	hVelocity
+eLifeTime	hLifeTime
+Potential	SpaceCharge
+QuantumYield
+SRHRecombination	Auger SurfaceRecombination
+AbsorbedPhotonDensity OpticalGeneration ComplexRefractiveIndex
+*--Traps
+   eTrappedCharge  hTrappedCharge
+   eGapStatesRecombination hGapStatesRecombination
+
+*--Heat generation
+   * TotalHeat eJouleHeat hJouleHeat RecombinationHeat
+}
+
+Math {
+#-Cylindrical
+Cylindrical(xAxis=0)
+#-NLM
+NonLocal "NLM" (
+Electrode = "Top"
+Length = 1e-5
+Digits = 3
+EnergyResolution = 1e-3
+)
+#-CurrentPlot
+CurrentPlot (IntegrationUnit = cm)
+#-NumThreads
+NumberOfThreads = Maximum
+#-Iterations
+Iterations=25
+RelErrControl
+#-ExtededPrecision(80bit)
+ExtendedPrecision(80)
+Digits=9
+NotDamped=30		 * to avoid solution correction damping
+RHSMin=1e-99		 * RHS often below default 1e-5 with ExtendedPrecision
+ErrRef(electron)=1E-30  * tightened computation error control, helps
+ErrRef(hole) = 1E-30   * simulator to converge better
+RhsFactor = 1.e20
+Method = Blocked
+SubMethod = Pardiso
+TensorGridAniso(aniso) * fast and efficient Aniso approximation
+ExitOnFailure
+#-BreakCriteria
+BreakCriteria {
+Current (Contact = "Top" minval = @<(-0.1*(200*1e-4*200*1e-4*3.141592))>@) 
+}
+}
+
+Solve {
+Coupled (iterations=100) {Poisson}
+Quasistationary (
+InitialStep=0.001 MaxStep=0.03 MinStep = 1e-10
+Increment = 10 Decrement = 10
+Goal{ voltage = @AV@ Name="Top" }
+){ Coupled (iterations = 20) {Poisson Electron Hole}
+#-Plot( -Loadable Fileprefix="Plot_Array/Ga2O3_SBD_AV@AV@_GW@GW@_Eb@Eb@_" NoOverWrite)
+}
+}

@@ -1,0 +1,74 @@
+#define ParFileDir .
+
+Material="Ga2O3" {
+  #includeext "ParFileDir/Ga2O3.par"
+
+Scharfetter {
+taumax = 1e-6, 1e-6 #-tau = 1 us
+taumin = 1e-6, 1e-6
+}
+
+#-Impact ionization coefficient (Chynoweth)
+vanOverstraetendeMan {
+a(low) = 0.706e6 , 4.3e5
+a(high) = 0.706e7 , 4.3e5
+b(low) = 2.10e7, 5.1e6
+b(high) = 2.10e7,5.1e6
+E0 = 4.8e6 , 4.8e6
+}
+
+vanOverstraetendeMan_aniso {
+a(low) = 0.706e6 , 4.3e5
+a(high) = 0.706e7 , 4.3e5
+b(low) = 2.10e7, 5.1e6
+b(high) = 2.10e7,5.1e6
+E0 = 4.8e6 , 4.8e6
+}
+
+HighFieldDependence {
+beta0	= 1.2 ,	1.2	# [1]
+betaexp	= 1.0000e+00 ,	1.0000e+00	# [1]
+alpha	= 0.0000e+00 ,	0.0000e+00	# [1]
+vsat0		=	1.5e+07,1.5e+07 #Ga2O3
+vsatexp		=	0.44,	0.44	#4H-SiC [00Lad] [00Kha] for electron
+}
+
+ConstantMobility
+	{
+		mumax		=	118,	20	  #[04Aya]
+		Exponent	       =	        2.4,	2.15	      #[04Aya]
+	}
+
+Ionization {
+
+
+Species ("TinConcentration") {
+#beta-Ga2O3 Si
+	type = donor
+        E_0           =       0.015          #beta-Ga2O3 [09Koi]
+        alpha         =       3.60e-08       #beta-Ga2O3 [09Koi]
+        g             =       2.0
+        Xsec          =       1.0000e-12
+   }
+
+Species ("TinActiveConcentration") {
+#beta-Ga2O3 Si
+	type = donor
+        E_0           =       0.015          #beta-Ga2O3 [09Koi]
+        alpha         =       3.60e-08       #beta-Ga2O3 [09Koi]
+        g             =       2.0
+        Xsec          =       1.0000e-12
+   }
+}
+
+
+
+BarrierTunneling "NLM" {
+g = 2.1e-5 , 0.66e-5
+mt = 0.5 , 0.5
+}
+}
+
+Material="GaN" {
+  #includeext "ParFileDir/GaN.par"
+}
