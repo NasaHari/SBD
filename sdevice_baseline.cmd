@@ -1,25 +1,20 @@
 File {
  *-Input
-  Grid  = "/home/2023phxp0439g/synopsys_chipin_work/STDB/tmp/R_GaN_Ga2O3/Ga2O3_GaN_SBD_Nd@Nd@_GW@GW@_msh.tdr"
-  Parameter = "@parameter@"
- *-Output
-  Plot = "Ga2O3_SBD_Nd@Nd@_AV@AV@_GW@GW@_Eb@Eb@_des.tdr"
-  Current = "Ga2O3_SBD_Nd@Nd@_AV@AV@_GW@GW@_Eb@Eb@_des.plt"
-  Output  = "Ga2O3_SBD_Nd@Nd@_AV@AV@__GW@GW@_Eb@Eb@_des.log"
-  Parameter = "/home/2023phxp0439g/synopsys_chipin_work/STDB/tmp/R_GaN_Ga2O3/Ga2O3.par"
-  Parameter = "/home/2023phxp0439g/synopsys_chipin_work/STDB/tmp/R_GaN_Ga2O3/GaN.par"
-  Parameter = "/home/2023phxp0439g/synopsys_chipin_work/STDB/tmp/R_GaN_Ga2O3/sdevice.par"
-Parameter = "/home/2023phxp0439g/synopsys_chipin_work/STDB/tmp/R_GaN_Ga2O3/datexcodes.txt"
-}
+  Grid  = "/home/2023b5aa1006g/synopsys_chipin_work/STDB/tmp/SBD_sept2/Ga2O3_GaN_SBD_Nd1.4e16_GW0.01_msh.tdr"
 
+  Parameter = "/home/2023b5aa1006g/synopsys_chipin_work/STDB/tmp/SBD_sept2/Ga2O3.par"
+  Parameter = "/home/2023b5aa1006g/synopsys_chipin_work/STDB/tmp/SBD_sept2/GaN.par"
+  Parameter = "/home/2023b5aa1006g/synopsys_chipin_work/STDB/tmp/SBD_sept2/sdevice.par"
+Parameter = "/home/2023b5aa1006g/synopsys_chipin_work/STDB/tmp/SBD_sept2/datexcodes.txt"
+}
 Electrode {
-{ name="Top" voltage=0.0 region=GaN Schottky Barrier=@Eb@  DistResist = @<@Ron@*1e-3>@ eRecVelocity = 1e7 hRecVelocity = 1e7}
-{ name="Bottom" voltage=0.0 DistResist = @<@Ron@*1e-3>@ eRecVelocity = 1e7 hRecVelocity = 1e7}
+{ name="Top" voltage=0.0 region=GaN Schottky Barrier=1  DistResist =1e-3 eRecVelocity = 1e7 hRecVelocity = 1e7}
+{ name="Bottom" voltage=0.0 DistResist =1e-3 eRecVelocity = 1e7 hRecVelocity = 1e7}
 }
 
 Physics {
 #- Ambient Temperature
-Temperature = @<273.15+25>@
+Temperature = 298.15
 #- Common Physical Models
 #-Anisotropic
 Aniso (
@@ -90,7 +85,7 @@ EnergyResolution = 1e-3
 #-CurrentPlot
 CurrentPlot (IntegrationUnit = cm)
 #-NumThreads
-NumberOfThreads = Maximum
+NumberOfThreads =  Maximum 
 #-Iterations
 Iterations=25
 RelErrControl
@@ -108,7 +103,7 @@ TensorGridAniso(aniso) * fast and efficient Aniso approximation
 ExitOnFailure
 #-BreakCriteria
 BreakCriteria {
-Current (Contact = "Top" minval = @<(-0.1*(200*1e-4*200*1e-4*3.141592))>@) 
+Current (Contact = "Top" minval = -0.00012566368) 
 }
 }
 
@@ -117,8 +112,9 @@ Coupled (iterations=100) {Poisson}
 Quasistationary (
 InitialStep=0.001 MaxStep=0.03 MinStep = 1e-10
 Increment = 10 Decrement = 10
-Goal{ voltage = @AV@ Name="Top" }
+Goal{ voltage =-600 Name="Top" }
 ){ Coupled (iterations = 20) {Poisson Electron Hole}
 #-Plot( -Loadable Fileprefix="Plot_Array/Ga2O3_SBD_AV@AV@_GW@GW@_Eb@Eb@_" NoOverWrite)
 }
 }
+

@@ -1,0 +1,1291 @@
+****************************************************************************
+***                           Sentaurus Device                           ***
+***                          Version V-2024.03                           ***
+***                      (3.8727837, x86_64, Linux)                      ***
+***                                                                      ***
+***                       Copyright (C) 1994-2024                        ***
+***                            Synopsys, Inc.                            ***
+***                                                                      ***
+***  This software and the associated documentation are confidential     ***
+***  and proprietary to Synopsys, Inc.  Your use or disclosure of this   ***
+***  software is subject to the terms and conditions of a written        ***
+***  license agreement between you, or your company, and Synopsys, Inc.  ***
+****************************************************************************
+
+	Running on machine with the following configuration:
+	Host Name: C1.goa.bits-pilani.ac.in
+	Operating System: Linux rel. 4.18.0-553.37.1.el8_10.x86_64 ver. #1 SMP Thu Feb 6 14:36:24 UTC 2025
+	Machine Type: x86_64
+	Process ID: 711719
+	Number of processors: 128
+	Domain Name: (none)
+	Date: Thu Sep  3 00:41:35 2026  (IST)
+
+Thu Sep  3 00:41:36 2026: checked out 1 sdevice license(s)
+Parsing circuit file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_SRL1.ccf
+Parsing circuit file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource2.ccf
+Parsing circuit file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource.ccf
+Parsing circuit file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource2.ccf
+Parsing circuit file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_sRL.ccf
+Parsing circuit file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource.ccf
+Parsing circuit file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/bs_psource.ccf
+Parsing circuit file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_pGC.ccf
+Parsing circuit file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/scm/satinductor.ccf
+Parsing circuit file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/scm/MOS_harness.ccf
+Parsing circuit file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/scm/ferroelectric.ccf
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/scm/ferroelectric.so.linux64
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/scm/MOS_harness.so.linux64
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/scm/satinductor.so.linux64
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_pGC.so.linux64
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/bs_psource.so.linux64
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource.so.linux64
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_sRL.so.linux64
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource2.so.linux64
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_vsource.so.linux64
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_hb_isource2.so.linux64
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/sd_SRL1.so.linux64
+Loading shared object file /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice/ConstantCarrierGeneration.so.linux64
+Thu Sep  3 00:41:40 2026: checked out 32 sdevice-parallel license(s)
+Thu Sep  3 00:41:44 2026: checked out 32 sparallel license(s)
+
+Input source: sdevice_baseline.cmd
+
+===============================
+
+Output file: Ga2O3_SBD_Nd1.4e16_AV-600_GW0.01_Eb1.0_des.log
+
+
+GlobalParameter {
+}
+no ACExtract file
+
+PMIPath file: /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice-35.3.8727837 /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice
+
+CMIPath file: /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/sdevice /opt/synopsys/software/sentaurus/current/bin/../tcad/current/linux64/lib/scm
+
+SPICEPath file: /opt/synopsys/software/sentaurus/current/bin/../tcad/current/lib/sdevice-35.3.8727837/spice
+
+no DevicePath file
+
+no CIRCUITSAVENAME file
+
+no CIRCUITLOADNAME file
+
+Numerical parameters:
+  Absolute error : 
+    Poisson : 1.0000e-03
+    eqPoisson : 1.0000e-03
+    Electron : 1.0000e-05
+    Hole : 1.0000e-05
+    Photon-Rate-Equation : 1.0000e-07
+    Photon-Phase-Equation : 1.0000e-05
+    Rate-Stabilize-Equation : 1.0000e-07
+    QW-Scattering-Equations : 1.0000e-05
+    QW-eScattering-Equation : 1.0000e-05
+    QW-hScattering-Equation : 1.0000e-05
+    Optical Problem : 1.0000e-03
+    Wavelength : 1.0000e-03
+    Bandstructure : 1.0000e-03
+    EmissionTable : 1.0000e-03
+    DephasingRates : 1.0000e-03
+    Photon Recycling : 1.0000e-03
+    Electron-Temperature : 1.0000e-04
+    Hole-Temperature : 1.0000e-04
+    Lattice-Hole-Electron-Temperature : 1.0000e-03
+    Circuit : 1.0000e-03
+    TCircuit : 1.0000e-03
+    Contact : 1.0000e-03
+    TContact : 1.0000e-03
+    Continuation : 1.0000e-03
+    eLaplace : 1.0000e-03
+    hLaplace : 1.0000e-03
+    tLaplace : 1.0000e-03
+    electron quasi-fermi-potential : 1.0000e-03
+    hole quasi-fermi-potential : 1.0000e-03
+    MonteCarlo : 1.0000e-03
+    MCPoissonPDE : 1.0000e-03
+    eQuantumPotential : 1.0000e-03
+    hQuantumPotential : 1.0000e-03
+    quasi-fermi-potential : 1.0000e-03
+    ConductiveInsulator : 1.0000e-03
+    ContactAndConductiveInsulator : 1.0000e-03
+    SingletExciton : 1.0000e-05
+    FEPolarization : 1.0000e-05
+    FEPolarizationX : 1.0000e-05
+    FEPolarizationY : 1.0000e-05
+    FEPolarizationZ : 1.0000e-05
+    FEPolDivFree : 1.0000e-03
+    eHopping : 1.0000e-03
+    hHopping : 1.0000e-03
+    HydrogenAtom : 1.0000e-03
+    HydrogenMolecule : 1.0000e-03
+    HydrogenIon : 1.0000e-03
+    HydrogenSpeciesA : 1.0000e-03
+    HydrogenSpeciesB : 1.0000e-03
+    HydrogenSpeciesC : 1.0000e-03
+    HydrogenSiliconBondOccupation : 1.0000e-03
+    TrapPDE : 1.0000e-03
+    eSHEDistribution : 1.0000e-03
+    hSHEDistribution : 1.0000e-03
+    Landau-Lifshitz-Gilbert[theta] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[phi] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[x] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[y] : 1.0000e-03
+    Landau-Lifshitz-Gilbert[z] : 1.0000e-03
+    Mechanics : 1.0000e-03
+    ExternalTransportSolver : 1.0000e-03
+    ReactionDiffusionPDE : 1.0000e-03
+    eDensity_Valley1 : 1.0000e-05
+    eDensity_Valley2 : 1.0000e-05
+    eDensity_Valley3 : 1.0000e-05
+    eDensity_Valley4 : 1.0000e-05
+    hDensity_Valley1 : 1.0000e-05
+    hDensity_Valley2 : 1.0000e-05
+    hDensity_Valley3 : 1.0000e-05
+    hDensity_Valley4 : 1.0000e-05
+    eMVTransitionRate : 1.0000e-05
+    hMVTransitionRate : 1.0000e-05
+  RelErrControl (Reference error): 
+    Poisson : 0.025852
+    eqPoisson : 1
+    Electron : 1.0000e-30
+    Hole : 1.0000e-30
+    Photon-Rate-Equation : 1.0000e-07
+    Photon-Phase-Equation : 1
+    Rate-Stabilize-Equation : 1.0000e-07
+    QW-Scattering-Equations : 1.0000e+10
+    QW-eScattering-Equation : 1.0000e+10
+    QW-hScattering-Equation : 1.0000e+10
+    Optical Problem : 1
+    Wavelength : 1
+    Bandstructure : 1
+    EmissionTable : 1
+    DephasingRates : 1
+    Photon Recycling : 1
+    Electron-Temperature : 3.0000e+02
+    Hole-Temperature : 3.0000e+02
+    Lattice-Hole-Electron-Temperature : 3.0000e+02
+    Circuit : 1
+    TCircuit : 1
+    Contact : 0.025852
+    TContact : 1
+    Continuation : 1
+    eLaplace : 1
+    hLaplace : 1
+    tLaplace : 1
+    electron quasi-fermi-potential : 0.025852
+    hole quasi-fermi-potential : 0.025852
+    MonteCarlo : 1
+    MCPoissonPDE : 1
+    eQuantumPotential : 0.025852
+    hQuantumPotential : 0.025852
+    quasi-fermi-potential : 0.025852
+    ConductiveInsulator : 1
+    ContactAndConductiveInsulator : 1
+    SingletExciton : 1.0000e+10
+    FEPolarization : 0.025852
+    FEPolarizationX : 0.025852
+    FEPolarizationY : 0.025852
+    FEPolarizationZ : 0.025852
+    FEPolDivFree : 1
+    eHopping : 0.025852
+    hHopping : 0.025852
+    HydrogenAtom : 1.0000e+10
+    HydrogenMolecule : 1.0000e+10
+    HydrogenIon : 1.0000e+10
+    HydrogenSpeciesA : 1.0000e+10
+    HydrogenSpeciesB : 1.0000e+10
+    HydrogenSpeciesC : 1.0000e+10
+    HydrogenSiliconBondOccupation : 1
+    TrapPDE : 1.0000e-05
+    eSHEDistribution : 0.025852
+    hSHEDistribution : 0.025852
+    Landau-Lifshitz-Gilbert[theta] : 1
+    Landau-Lifshitz-Gilbert[phi] : 1
+    Landau-Lifshitz-Gilbert[x] : 1
+    Landau-Lifshitz-Gilbert[y] : 1
+    Landau-Lifshitz-Gilbert[z] : 1
+    Mechanics : 1
+    ExternalTransportSolver : 1
+    ReactionDiffusionPDE : 1
+    eDensity_Valley1 : 1.0000e+10
+    eDensity_Valley2 : 1.0000e+10
+    eDensity_Valley3 : 1.0000e+10
+    eDensity_Valley4 : 1.0000e+10
+    hDensity_Valley1 : 1.0000e+10
+    hDensity_Valley2 : 1.0000e+10
+    hDensity_Valley3 : 1.0000e+10
+    hDensity_Valley4 : 1.0000e+10
+    eMVTransitionRate : 1.0000e+10
+    hMVTransitionRate : 1.0000e+10
+  Relative error : 9 digits
+  Without checked transient error
+  Max. #iterations : 25
+  LineSearchDamping=1
+  #undamped iterations : 30
+  No incomplete Newton
+  transient method : TR-BDF
+  Linear solver : blocked decomposition
+  Linear solver for AC analysis : blocked decomposition
+  Linear solver for SHEDistribution Model : Super
+  do not use extrapolation in transient/quasistationary computations
+  use complex supernodal in ac-analysis (if possible)
+  do not use smoothed PDE's in transient/quasistationary computations
+  use automatic coupling of contact/circuit stuff
+  Spice temperature: 3.0015e+02
+  Spice nominal temperature of parameter measurements: 3.0015e+02
+  Spice minimum conductance gmin: 1.0000e-12
+  Terminate simulation immediately if a solve command fails.
+  Use 80 bit (long double) extended precision floating point arithmetic.
+  Mininum |rhs| : 1.0000e-99
+  Maximum |rhs| (transient): 1.0000e+15
+  Maximum |rhs| (non-transient): 1.0000e+100
+  Maximum |rhs| factor : 1.0000e+20
+  Maximum |rhs| factor1 : 1.0000e+100
+  Lattice Temperature Range : (50,5.0000e+03)
+  Carrier Temperature Range : (10,8.0000e+04)
+  SHESORError : 0.0000e+00
+  Simplified first order SHE of BTE will be solved
+  SHERefinementCutoff : 20
+  No user dependencies.
+  Number of assembly threads: 128 (Sentaurus Device command file)
+  Number of solver threads: 128 (Sentaurus Device command file)
+  Thread stacksize: 1000000 bytes (default)
+  Go serial if not enough parallel licenses are available.
+  Model: Math  Switched on
+
+Default device parameters:
+  Electrodes:
+    "Top" : 0.0000e+00 V (Schottky, Barrier = 1 V) (Resistivity = 1.0000e-03 Ohms * cm**2), area factor : 1, 
+      eRecVelocity = 1.0000e+07 cm/s , hRecVelocity = 1.0000e+07 cm/s 
+    "Bottom" : 0.0000e+00 V (Ohmic, Resistivity = 1.0000e-03 Ohms * cm**2)), area factor : 1, 
+      eRecVelocity = 1.0000e+07 cm/s , hRecVelocity = 1.0000e+07 cm/s 
+  RayTrace Boundaries:
+  Files:
+    no Boundary file
+    Grid file: Ga2O3_GaN_SBD_Nd1.4e16_GW0.01_msh.tdr
+    no Doping file
+    no MobilityDoping file
+    MIMCurrent file: sdevice_baseline_mimcur_des.plt
+    no MIMDefects file
+    no InitialDefects file
+    no CyclicNorm file
+    no MIMBand file
+    MIMSensitivity file: sdevice_baseline_mimsa_des.tdr
+    no Load file
+    no Save file
+    Plot file: Ga2O3_SBD_Nd1.4e16_AV-600_GW0.01_Eb1.0_des.tdr
+    no DevFieldsName file
+    AutoNewtonPlot file: Ga2O3_SBD_Nd1.4e16_AV-600_GW0.01_Eb1.0_des_%ld_des.tdr
+    no Path file
+    no Lifetime file
+    no Temperature file
+    Current file: Ga2O3_SBD_Nd1.4e16_AV-600_GW0.01_Eb1.0_des.plt
+    no PMIUserFields file
+    no Extraction file
+    ModelParameters file: Ga2O3.par
+    ParameterPath directories: 
+    no Piezo file
+    no mcDOS file
+    no ModeGain file
+    no Optical emission table for stimulated emission file
+    no Optical emission table for spontaneous emission file
+    no Optical emission table for photon phase change coefficient file
+    no EmissionTable file
+    no DephasingRates file
+    no OpticalFarField file
+    no OpticalIntensityPattern file
+    no SaveOpticalIntensityPattern file
+    no IlluminationSpectrum file
+    no SpectralPlot file
+    no OpticalSolverInput file
+    no OpticalGenerationInput file
+    no OpticalGenerationOutuput file
+    no OptGenTransientScaling file
+    no MonteCarloInput file
+    no MonteCarloOutput file
+    no ACPlot file
+-----------------------------------------------
+  Numerical parameters:
+    With avalanche derivatives
+    Using New Plot Names
+    Anisotropy Effects are modeled in TGA_Aniso Approximation
+    Using old wavelength search algorithm
+    Do not reinitialize quasi Fermi potentials in quasi-stationary simulations
+    Ignore ionization integral constraints
+    Without diagonal preconditioning
+    With Scharfetter-Gummel Discretization
+    Relative error : 9 digits
+    Delta for numerical tunnelling derivatives : 1.0000e-03
+    Cylindrical Device with x-Axis offset: 0.0000e+00
+    Linear solver (submethod) : Pardiso
+    Do not compute breakdown paths, ionization integrals, and Off-state Breakdown Analysis (OBA)
+    QuasiFermiPotential is used for Contact Equation
+    Break if contact current (Top) exceeds bounds:
+        minval = -1.2566e-04
+    Use length unit of centimeter during currentplot integration.
+    With usage of best vertex in element (maximum element-vertex volume angle) for impact ionization models
+-----------------------------------------------
+-----------------------------------------------
+  Physical models:
+    With incomplete ionization
+      PMI Incomplete ionization models: none
+    Use Si parameters
+    TATNonlocalPathNC = 0.0000e+00
+    With SRH-Recombination
+      Without field dependent lifetimes
+      With doping dependent lifetimes
+      With temperature dependent lifetimes (power law)
+    Without CDL-Recombination
+    With optical generation computation 
+    With electron non local Barrier Tunneling
+    With hole non local Barrier Tunneling
+    Without Band-to-Band-Tunneling
+    With Auger-Recombination (without Generation)
+    Without Radiative Recombination
+    Without Surface-Recombination
+    Without Trap-Assisted-Auger-Recombination
+    PMI recombination models: ConstantCarrierGeneration (value = 1e+15)
+    Without thermal resistance interfaces
+    Without distributed resistance interfaces for electrons
+    Without distributed resistance interfaces for holes
+    Without Piezo
+    With Anisotropic Material Properties:
+      EpsilonFactor = 1.000 (OBSOLETE)
+      anisotropic electrical permittivity
+      Anisotropic Direction in Cristal System: ( 0.000, 1.000, 0.000 ) um
+      Hatakeyama model uses Anisotropic Direction 
+      eMobilityFactor = 1.000 
+      anisotropic eMobility (self-consistent calculations using local solver)
+      hMobilityFactor = 1.000 
+      anisotropic hMobility (self-consistent calculations using local solver)
+      AnisoMetalResistivityFactor = 1.000 
+      eVsatFactor = 1.000 (OBSOLETE)
+      hVsatFactor = 1.000 (OBSOLETE)
+      eAvalancheFactor = 1.000 (OBSOLETE)
+      hAvalancheFactor = 1.000 (OBSOLETE)
+      anisotropic eAvalanche
+      anisotropic hAvalanche
+      OriKddX : ( 1.000, 0.000, 0.000 ) 
+      OriKddY : ( 0.000, 1.000, 0.000 ) 
+
+    With Avalanche-Generation: 
+    For electrons:
+      driving force is Gradient Quasi Fermi,
+      model according to van Overstraeten / de Man
+    For holes:
+      driving force is Gradient Quasi Fermi,
+      model according to van Overstraeten / de Man
+
+    Without Alpha Particle
+    Without Heavy Ion
+    Without polarization
+    Volume charge density: 0.0000e+00 cm^-3
+    Device Temperature = 2.9815e+02 K
+    Electron Quasi Fermi Potential: 0.0000e+00 V
+    Hole Quasi Fermi Potential: 0.0000e+00 V
+    Without MagneticField
+    With SingletExciton Barrier Type
+    Fermi Statistic 
+    Intrinsic density models:
+      default bandgap model
+      Bandgap narrowing model: Bennett/Wilson without bandgap narrowing
+    default affinity model
+    default effective mass model
+    Electron mobility:
+      no Doping dependence (using constant mobility)
+      no Carrier-Carrier scattering
+      no bulk trap Coulomb scattering 
+      no E_normal dependence
+      Without ThinLayer mobility model
+      High-field mobility: Caughey-Thomas saturation model, using gradient quasi-Fermi potential
+      Einstein relation for diffusivity-mobility ratio
+      no band tail high-field mobility
+    Hole mobility:
+      no Doping dependence (using constant mobility)
+      no Carrier-Carrier scattering
+      no bulk trap Coulomb scattering 
+      no E_normal dependence
+      Without ThinLayer mobility model
+      High-field mobility: Caughey-Thomas saturation model, using gradient quasi-Fermi potential
+      Einstein relation for diffusivity-mobility ratio
+      no band tail high-field mobility
+    Energy relaxation time model: according to formula in parameter file
+    Schottky resistance model: default bult-in model
+    Lattice thermal conductivity model: according to formula in parameter file
+    Metal Resistivity model: according to formula in parameter file
+    Thermo Electric Power model: extraploted Si data
+    Metal Thermo Electric Power model: MetalThermoElectricPower model not defined
+    Lattice heat capacity model: temperature dependent
+    no piezoelectric polarization model
+    Without default parameters from file (use built-in default parameters)
+-----------------------------------------------
+- - - - - - - - - - - - - - - - - - - - - - - - 
+  The following Physical models have been specified
+              for Electrode = 'Top'
+    With Barrier Lowering
+    Without thermal resistance interfaces
+    Without distributed resistance interfaces for electrons
+    Without distributed resistance interfaces for holes
+- - - - - - - - - - - - - - - - - - - - - - - -
+  Process information for extraction purposes:
+    none
+  Plot variables:
+    ConductionBandEnergy
+    ValenceBandEnergy
+    AvalancheGeneration
+    ! WARNING AvalancheGeneration is an alias for ImpactIonization. The latter name will appear in .plt and .tdr files. 
+    eAvalancheGeneration
+    ! WARNING eAvalancheGeneration is an alias for eImpactIonization. The latter name will appear in .plt and .tdr files. 
+    hAvalancheGeneration
+    ! WARNING hAvalancheGeneration is an alias for hImpactIonization. The latter name will appear in .plt and .tdr files. 
+    ElectricField
+    DopingConcentration
+    DonorConcentration
+    AcceptorConcentration
+    eDensity
+    hDensity
+    eCurrentDensity
+    hCurrentDensity
+    eMobility
+    hMobility
+    eVelocity
+    hVelocity
+    eLifetime
+    hLifetime
+    ElectrostaticPotential
+    SpaceCharge
+    QuantumYield
+    SRHRecombination
+    AugerRecombination
+    SurfaceRecombination
+    AbsorbedPhotonDensity
+    OpticalGeneration
+    ComplexRefractiveIndex
+    eTrappedCharge
+    hTrappedCharge
+    eGapStatesRecombination
+    hGapStatesRecombination
+
+------------------------------------------------
+  NoisePlot variables:
+    none
+  Plot groups:
+    none
+
+------------------------------------------------
+  CurrentPlot variables:
+    none
+Devices:
+Systems:
+Solve :
+ Poisson
+Quasistationary ( Digits : 9, Max. #iterations : 25, 
+      Initial step in t : 1.0000e-03, 
+      Minimum step in t : 1.0000e-10, Maximum step in t : 0.03, 
+      Increment : 10, Decrement : 10, 
+      Goal values :
+        Contact Top : -6.0000e+02V
+    )
+  {
+    Coupled ( Digits : 9, Max. #iterations : 20, 
+        Solver : blocked decomposition,
+        #undamped iterations : 30 
+        )
+        { Poisson Electron Hole } 
+  }
+
+===============================
+
+Reading grid 'Ga2O3_GaN_SBD_Nd1.4e16_GW0.01_msh.tdr' ... 
+  coordinate system: UCS, 3d_sprocess (x is device down direction)
+  use coordinate system as is (no transformation)
+  TDR format
+  Number of grid points is 332.
+done.
+
+Adding interfaces and contacts .... done.
+
+Computing edges ...
+  Number of edges: 1500
+done.
+Computing boxes ...
+
+  CVPL_AverageBoxMethod = TRUE 
+   
+  Boxmethod Parallel Computing: nbThreads = 128 
+Computing cylindrical box method ...
+Info for all regions (NumberOfRegions = 3):
+        ElementWithMinVolume(     6) Vertex0(   19)( 1.250000e+01, 1.000000e-02) Volume = 4.699707e-04 um3 (1.11e-06 from TotalVolume)
+          ElementWithMinEdge(     0) Vertex0(   14)( 6.250000e+00, 1.000000e-02) Length = 3.759766e-04 um
+              MaxFlatElement(   537) Vertex0(  289)( 1.500000e+01, 1.062500e+01)  Angle = 6.990332e+01 degrees
+         ElementWithMinAngle(   326) Vertex0(   14)(-0.000000e+00, 1.000000e-02)  Angle = 3.446699e-03 degrees
+   ElementWithMaxQualityEdge(     0) Vertex0(   14)( 6.250000e+00, 1.000000e-02)    R/L = 8.311688e+03 
+ ElementWithMaxQualityHeight(     0) Vertex0(   14)( 6.250000e+00, 1.000000e-02)    R/H = 8.311688e+03 
+
+Info for semiconductor regions (NumberOfRegions = 3):
+        ElementWithMinVolume(     6) Vertex0(   19)( 1.250000e+01, 1.000000e-02) Volume = 4.699707e-04 um3 (1.11e-06 from TotalVolume)
+          ElementWithMinEdge(     0) Vertex0(   14)( 6.250000e+00, 1.000000e-02) Length = 3.759766e-04 um
+              MaxFlatElement(   537) Vertex0(  289)( 1.500000e+01, 1.062500e+01)  Angle = 6.990332e+01 degrees
+         ElementWithMinAngle(   326) Vertex0(   14)(-0.000000e+00, 1.000000e-02)  Angle = 3.446699e-03 degrees
+   ElementWithMaxQualityEdge(     0) Vertex0(   14)( 6.250000e+00, 1.000000e-02)    R/L = 8.311688e+03 
+ ElementWithMaxQualityHeight(     0) Vertex0(   14)( 6.250000e+00, 1.000000e-02)    R/H = 8.311688e+03 
+
+   NumberOfEdges              =   1500 
+   NumberOfGeometricalEdges   =    875 
+   NumberOfDoubleEdges        =      0 
+   MaxNumberOfEdgesPerVertex  =      7; vertex(161) = ( 1.250000e+01,  1.275000e+01) [um]
+   MaxNumberOfElementsPerEdge =      2; edge(0) = (14, 20) 
+                                        vertex(14) = ( 6.250000e+00,  1.000000e-02) [um]
+                                        vertex(20) = ( 1.250000e+01,  1.037598e-02) [um]
+
+  VertexWithMaxMeasure(  271)( 1.875000e+01, 1.275000e+01)
+  MaxVertMeasure(6.520110e+01)/VertVolume(6.640625e+00) = 9.82e+00
+
+
+/-------- Region non-Delaunay elements --------------------------------------------------------------------
+ Region         Volume      BoxMethodVolume  DeltaVolume  Elements  non-Delaunay      non-DelaunayVolume 
+  name           [um3]          [um3]           [%]                   Elements              [um3]   [%]   
+ ----------------------------------------------------------------------------------------------------------
+ Ga2O3_epi   1.3737399e+04  1.3737399e+04     1.3e-08       467       0 ( 0.00 %)   0.0000000e+00 ( 0.0000) 
+ GaN_con     7.0685835e+00  7.0685835e+00     1.3e-08        30       0 ( 0.00 %)   0.0000000e+00 ( 0.0000) 
+ Ga2O3_base  1.9634954e+04  1.9634954e+04     1.3e-08        47       0 ( 0.00 %)   0.0000000e+00 ( 0.0000) 
+ ..........................................................................................................
+ Total       3.3379422e+04  3.3379422e+04     1.3e-08       544       0 ( 0.00 %)   0.0000000e+00 ( 0.0000) 
+\----------------------------------------------------------------------------------------------------------
+ done.
+  Cylindrical Parameters time:  tcpu = 0.0000e+00 s
+
+  (times: wallclock = 0.0000e+00 s, tcpu = 0.0000e+00 s)
+done.
+Reading doping 'Ga2O3_GaN_SBD_Nd1.4e16_GW0.01_msh.tdr' (TDR format) ...
+done.
+done.
+Reading parameter file 'Ga2O3.par' ...
+---------------------------------------------------
+ Reading parameters for default parameter set
+---------------------------------------------------
+
+	Differences compared with default parameters:
+	epsilon: epsilon = 10.2, instead of: 11.7 [1]
+	epsilon_aniso: epsilon = 10.2, instead of: 11.7 [1]
+	Thermal resistivity: W = 0.0917, instead of: 0.03 [(K cm)/W]
+	Thermal resistivity: W_b = 2.7500e-04, instead of: 1.5600e-03 [cm/W]
+	Thermal resistivity: W_c = 1.3000e-06, instead of: 1.6500e-06 [cm/(W K)]
+	latticeheatcapacity: cv = 0.56, instead of: 1.63 [J/(K cm^3)]
+	latticeheatcapacity: cv_b = 0.02242, instead of: 0.0000e+00 [J/(K^2 cm^3)]
+	latticeheatcapacity: cv_c = -3.1300e-05, instead of: 0.0000e+00 [J/(K^3 cm^3)]
+	latticeheatcapacity: cv_d = 1.5460e-08, instead of: 0.0000e+00 [J/(K^4 cm^3)]
+	Bandgap: Chi0 = 4, instead of: 4.05 [eV]
+	Bandgap: Bgn2Chi = 0.0000e+00, instead of: 0.5 [1]
+	Bandgap: Eg0 = 4.85, instead of: 1.16964 [eV]
+	Bandgap: alpha = 0.0000e+00, instead of: 4.7300e-04 [eV/K]
+	Bandgap: beta = 0.0000e+00, instead of: 6.3600e+02 [K]
+	Slotboom: Nref = 1.0000e+17, instead of: 1.3000e+17 [cm^-3]
+	Slotboom: Ebgn = 9.0000e-03, instead of: 6.9200e-03 [eV]
+	JainRoulston: A_n = 1.7910e-08, instead of: 1.0200e-08 [eV cm]
+	JainRoulston: B_n = 8.9270e-07, instead of: 4.1500e-07 [eV cm^(3/4)]
+	JainRoulston: C_n = 2.2000e-12, instead of: 1.4500e-12 [eV cm^(3/2)]
+	JainRoulston: D_n = 6.2400e-12, instead of: 1.4800e-12 [eV cm^(3/2)]
+	JainRoulston: A_p = -3.5070e-08, instead of: 1.1100e-08 [eV cm]
+	JainRoulston: B_p = 2.3120e-06, instead of: 4.7900e-07 [eV cm^(3/4)]
+	JainRoulston: C_p = 6.7400e-12, instead of: 3.2300e-12 [eV cm^(3/2)]
+	JainRoulston: D_p = 1.0700e-12, instead of: 1.8100e-12 [eV cm^(3/2)]
+	DOSeMass: Formula = 2, instead of: 1 [1]
+	DOSeMass: Nc300 = 3.7180e+18, instead of: 2.8900e+19 [1]
+	DOShMass: Formula = 2, instead of: 1 [1]
+	DOShMass: Nv300 = 2.4110e+19, instead of: 3.1400e+19 [cm-3]
+	ConstMob(elec): mumax = 1.1800e+02, instead of: 1.4170e+03 [cm^2/(Vs)]
+	ConstMob(elec): Exponent = 2.4, instead of: 2.5 [1]
+	ConstMob(hole): mumax = 20, instead of: 4.7050e+02 [cm^2/(Vs)]
+	ConstMob(hole): Exponent = 2.15, instead of: 2.2 [1]
+	HighFieldMob(elec): beta0 = 1.2, instead of: 1.109 [1]
+	HighFieldMob(elec): betaexp = 1, instead of: 0.66 [1]
+	HighFieldMob(elec): vsat0 = 1.2000e+07, instead of: 1.0700e+07 [cm/s]
+	HighFieldMob(elec): vsatexp = 0.44, instead of: 0.87 [1]
+	HighFieldMob(hole): beta0 = 1.2, instead of: 1.213 [1]
+	HighFieldMob(hole): betaexp = 1, instead of: 0.17 [1]
+	HighFieldMob(hole): vsat0 = 1.2000e+07, instead of: 8.3700e+06 [cm/s]
+	HighFieldMob(hole): vsatexp = 0.44, instead of: 0.52 [1]
+	Scharfetter(elec): tau_max = 2.5000e-06, instead of: 1.0000e-05 [s]
+	Scharfetter(hole): tau_max = 5.0000e-07, instead of: 3.0000e-06 [s]
+	Scharfetter(elec): Nref = 3.0000e+17, instead of: 1.0000e+16 [cm^(-3)]
+	Scharfetter(hole): Nref = 3.0000e+17, instead of: 1.0000e+16 [cm^(-3)]
+	Scharfetter(elec): gamma = 0.3, instead of: 1 [1]
+	Scharfetter(hole): gamma = 0.3, instead of: 1 [1]
+	Scharfetter(elec): T_alpha = 1.72, instead of: -1.5000e+00 [1]
+	Scharfetter(hole): T_alpha = 1.72, instead of: -1.5000e+00 [1]
+	Auger(elec): A = 5.0000e-31, instead of: 6.7000e-32 [cm^6/s]
+	Auger(hole): A = 2.0000e-31, instead of: 7.2000e-32 [cm^6/s]
+	Auger(elec): B = 0.0000e+00, instead of: 2.4500e-31 [cm^6/s]
+	Auger(hole): B = 0.0000e+00, instead of: 4.5000e-33 [cm^6/s]
+	Auger(elec): C = 0.0000e+00, instead of: -2.2000e-32 [cm^6/s]
+	Auger(hole): C = 0.0000e+00, instead of: 2.6300e-32 [cm^6/s]
+	Auger(elec): H = 0.0000e+00, instead of: 3.46667 [1]
+	Auger(hole): H = 0.0000e+00, instead of: 8.25688 [1]
+
+ Species "SiliconConcentration" { 
+
+Incomplete ionization parameters were specified for the species SiliconConcentration
+which is not defined for the material Silicon !
+
+	type 	= donor 
+	E_0	= 0.11	# [eV]
+	alpha	= 3.6000e-08	# [eV cm]
+	beta	= 0.0000e+00	# [1]
+	gamma	= 1	# [1]
+	g	= 2	# [1]
+	Xsec	= 1.0000e-12	# [cm^2]
+	Xsec_formula	= 1	# [1]
+	highdop_formula	= 1	# [1]
+	b_Nref	= 6.0000e+18	# [cm^-3]
+	b_pow	= 2	# [1]
+	E_Nref	= 2.0000e+18	# [cm^-3]
+	E_pow	= 2	# [1]
+      } 
+
+ Species "SiliconActiveConcentration" { 
+
+Incomplete ionization parameters were specified for the species SiliconActiveConcentration
+which is not defined for the material Silicon !
+
+	type 	= donor 
+	E_0	= 0.11	# [eV]
+	alpha	= 3.6000e-08	# [eV cm]
+	beta	= 0.0000e+00	# [1]
+	gamma	= 1	# [1]
+	g	= 2	# [1]
+	Xsec	= 1.0000e-12	# [cm^2]
+	Xsec_formula	= 1	# [1]
+	highdop_formula	= 1	# [1]
+	b_Nref	= 6.0000e+18	# [cm^-3]
+	b_pow	= 2	# [1]
+	E_Nref	= 2.0000e+18	# [cm^-3]
+	E_pow	= 2	# [1]
+      } 
+
+ Species "TinConcentration" { 
+
+Incomplete ionization parameters were specified for the species TinConcentration
+which is not defined for the material Silicon !
+
+	type 	= donor 
+	E_0	= 0.11	# [eV]
+	alpha	= 3.6000e-08	# [eV cm]
+	beta	= 0.0000e+00	# [1]
+	gamma	= 1	# [1]
+	g	= 2	# [1]
+	Xsec	= 1.0000e-12	# [cm^2]
+	Xsec_formula	= 1	# [1]
+	highdop_formula	= 1	# [1]
+	b_Nref	= 6.0000e+18	# [cm^-3]
+	b_pow	= 2	# [1]
+	E_Nref	= 2.0000e+18	# [cm^-3]
+	E_pow	= 2	# [1]
+      } 
+
+ Species "TinActiveConcentration" { 
+
+Incomplete ionization parameters were specified for the species TinActiveConcentration
+which is not defined for the material Silicon !
+
+	type 	= donor 
+	E_0	= 0.11	# [eV]
+	alpha	= 3.6000e-08	# [eV cm]
+	beta	= 0.0000e+00	# [1]
+	gamma	= 1	# [1]
+	g	= 2	# [1]
+	Xsec	= 1.0000e-12	# [cm^2]
+	Xsec_formula	= 1	# [1]
+	highdop_formula	= 1	# [1]
+	b_Nref	= 6.0000e+18	# [cm^-3]
+	b_pow	= 2	# [1]
+	E_Nref	= 2.0000e+18	# [cm^-3]
+	E_pow	= 2	# [1]
+      } 
+
+
+=======
+Region: "Ga2O3_base"
+  (material is "Ga2O3")
+=======
+  Model: "Auger"
+    Parameter "A_e" is modified from 6.7e-32 to 5e-31
+    Parameter "A_h" is modified from 7.2e-32 to 2e-31
+    Parameter "B_e" is modified from 2.45e-31 to 0
+    Parameter "B_h" is modified from 4.5e-33 to 0
+    Parameter "C_e" is modified from -2.2e-32 to 0
+    Parameter "C_h" is modified from 2.63e-32 to 0
+    Parameter "H_e" is modified from 3.46667 to 0
+    Parameter "H_h" is modified from 8.25688 to 0
+  Model: "Bandgap"
+    Parameter "Bgn2Chi" is modified from 0.5 to 0
+    Parameter "Chi0" is modified from 4.05 to 4
+    Parameter "Chi0_300" is modified from 4.07274 to 4
+    Parameter "Eg0" is modified from 1.16964 to 4.85
+    Parameter "Eg0_300" is modified from 1.12416 to 4.85
+    Parameter "alpha" is modified from 0.000473 to 0
+    Parameter "beta" is modified from 636 to 0
+  Model: "ConstantMobility_electron"
+    Parameter "Exponent" is modified from 2.5 to 2.4
+    Parameter "mumax" is modified from 1417 to 118
+  Model: "ConstantMobility_hole"
+    Parameter "Exponent" is modified from 2.2 to 2.15
+    Parameter "mumax" is modified from 470.5 to 20
+  Model: "DOSMass_electron"
+    Parameter "Nc300" is modified from 2.89e+19 to 3.718e+18
+  Model: "DOSMass_hole"
+    Parameter "Nv300" is modified from 3.14e+19 to 2.411e+19
+  Model: "Epsilon"
+    Parameter "epsilon" is modified from 11.7 to 10.2
+  Model: "Epsilon_aniso"
+    Parameter "epsilon" is modified from 11.7 to 10.2
+  Model: "HighFieldDependence_electron"
+    Parameter "beta0" is modified from 1.109 to 1.2
+    Parameter "betaexp" is modified from 0.66 to 1
+    Parameter "vsat0" is modified from 1.07e+07 to 1.2e+07
+    Parameter "vsatexp" is modified from 0.87 to 0.44
+  Model: "HighFieldDependence_hole"
+    Parameter "beta0" is modified from 1.213 to 1.2
+    Parameter "betaexp" is modified from 0.17 to 1
+    Parameter "vsat0" is modified from 8.37e+06 to 1.2e+07
+    Parameter "vsatexp" is modified from 0.52 to 0.44
+  Model: "Ionization"
+    Parameter "E_Nref_SiliconActiveConcentration" is new with value equal to 2e+18
+    Parameter "E_Nref_SiliconConcentration" is new with value equal to 2e+18
+    Parameter "E_Nref_TinActiveConcentration" is new with value equal to 2e+18
+    Parameter "E_Nref_TinConcentration" is new with value equal to 2e+18
+    Parameter "E_SiliconActiveConcentration_0" is new with value equal to 0.11
+    Parameter "E_SiliconConcentration_0" is new with value equal to 0.11
+    Parameter "E_TinActiveConcentration_0" is new with value equal to 0.11
+    Parameter "E_TinConcentration_0" is new with value equal to 0.11
+    Parameter "E_pow_SiliconActiveConcentration" is new with value equal to 2
+    Parameter "E_pow_SiliconConcentration" is new with value equal to 2
+    Parameter "E_pow_TinActiveConcentration" is new with value equal to 2
+    Parameter "E_pow_TinConcentration" is new with value equal to 2
+    Parameter "alpha_SiliconActiveConcentration" is new with value equal to 3.6e-08
+    Parameter "alpha_SiliconConcentration" is new with value equal to 3.6e-08
+    Parameter "alpha_TinActiveConcentration" is new with value equal to 3.6e-08
+    Parameter "alpha_TinConcentration" is new with value equal to 3.6e-08
+    Parameter "b_Nref_SiliconActiveConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_SiliconConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_TinActiveConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_TinConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_min_SiliconActiveConcentration" is new with value equal to 0
+    Parameter "b_Nref_min_SiliconConcentration" is new with value equal to 0
+    Parameter "b_Nref_min_TinActiveConcentration" is new with value equal to 0
+    Parameter "b_Nref_min_TinConcentration" is new with value equal to 0
+    Parameter "b_T_SiliconActiveConcentration" is new with value equal to 0
+    Parameter "b_T_SiliconConcentration" is new with value equal to 0
+    Parameter "b_T_TinActiveConcentration" is new with value equal to 0
+    Parameter "b_T_TinConcentration" is new with value equal to 0
+    Parameter "b_gamma_SiliconActiveConcentration" is new with value equal to 1
+    Parameter "b_gamma_SiliconConcentration" is new with value equal to 1
+    Parameter "b_gamma_TinActiveConcentration" is new with value equal to 1
+    Parameter "b_gamma_TinConcentration" is new with value equal to 1
+    Parameter "b_pow_SiliconActiveConcentration" is new with value equal to 2
+    Parameter "b_pow_SiliconConcentration" is new with value equal to 2
+    Parameter "b_pow_TinActiveConcentration" is new with value equal to 2
+    Parameter "b_pow_TinConcentration" is new with value equal to 2
+    Parameter "beta_SiliconActiveConcentration" is new with value equal to 0
+    Parameter "beta_SiliconConcentration" is new with value equal to 0
+    Parameter "beta_TinActiveConcentration" is new with value equal to 0
+    Parameter "beta_TinConcentration" is new with value equal to 0
+    Parameter "g_SiliconActiveConcentration" is new with value equal to 2
+    Parameter "g_SiliconConcentration" is new with value equal to 2
+    Parameter "g_TinActiveConcentration" is new with value equal to 2
+    Parameter "g_TinConcentration" is new with value equal to 2
+    Parameter "gamma_SiliconActiveConcentration" is new with value equal to 1
+    Parameter "gamma_SiliconConcentration" is new with value equal to 1
+    Parameter "gamma_TinActiveConcentration" is new with value equal to 1
+    Parameter "gamma_TinConcentration" is new with value equal to 1
+    Parameter "x_SiliconActiveConcentration" is new with value equal to 1e-12
+    Parameter "x_SiliconConcentration" is new with value equal to 1e-12
+    Parameter "x_TinActiveConcentration" is new with value equal to 1e-12
+    Parameter "x_TinConcentration" is new with value equal to 1e-12
+  Model: "Kappa"
+    Parameter "1/kappa" is modified from 0.03 to 0.0917
+    Parameter "1/kappa_b" is modified from 0 to 0.000275
+    Parameter "1/kappa_c" is modified from 0 to 1.3e-06
+  Model: "LatticeHeatCapacity"
+    Parameter "cv" is modified from 1.63 to 0.56
+    Parameter "cv_b" is modified from 0 to 0.02242
+    Parameter "cv_c" is modified from 0 to -3.13e-05
+    Parameter "cv_d" is modified from 0 to 1.546e-08
+  Model: "Roulston"
+    Parameter "A_n" is modified from 0 to 1.791e-08
+    Parameter "A_p" is modified from 0 to -3.507e-08
+    Parameter "B_n" is modified from 0 to 8.927e-07
+    Parameter "B_p" is modified from 0 to 2.312e-06
+    Parameter "C_n" is modified from 0 to 2.2e-12
+    Parameter "C_p" is modified from 0 to 6.74e-12
+    Parameter "D_n" is modified from 0 to 6.24e-12
+    Parameter "D_p" is modified from 0 to 1.07e-12
+  Model: "Scharfetter"
+    Parameter "Nref_e" is modified from 1e+16 to 3e+17
+    Parameter "Nref_h" is modified from 1e+16 to 3e+17
+    Parameter "Talpha_e" is modified from -1.5 to 1.72
+    Parameter "Talpha_h" is modified from -1.5 to 1.72
+    Parameter "gamma_e" is modified from 1 to 0.3
+    Parameter "gamma_h" is modified from 1 to 0.3
+    Parameter "taumax_e" is modified from 1e-05 to 2.5e-06
+    Parameter "taumax_h" is modified from 3e-06 to 5e-07
+  Model: "Slotboom"
+    Parameter "Ebgn" is modified from 0 to 0.009
+  Using default lattice crystal coordinate system:
+    effective LatticeParameters:
+      X = (1, 0.0000e+00, 0.0000e+00)
+      Y = (0.0000e+00, 1, 0.0000e+00)
+      Z = (0.0000e+00, 0.0000e+00, 1)
+
+=======
+Region: "Ga2O3_epi"
+  (material is "Ga2O3")
+=======
+  Model: "Auger"
+    Parameter "A_e" is modified from 6.7e-32 to 5e-31
+    Parameter "A_h" is modified from 7.2e-32 to 2e-31
+    Parameter "B_e" is modified from 2.45e-31 to 0
+    Parameter "B_h" is modified from 4.5e-33 to 0
+    Parameter "C_e" is modified from -2.2e-32 to 0
+    Parameter "C_h" is modified from 2.63e-32 to 0
+    Parameter "H_e" is modified from 3.46667 to 0
+    Parameter "H_h" is modified from 8.25688 to 0
+  Model: "Bandgap"
+    Parameter "Bgn2Chi" is modified from 0.5 to 0
+    Parameter "Chi0" is modified from 4.05 to 4
+    Parameter "Chi0_300" is modified from 4.07274 to 4
+    Parameter "Eg0" is modified from 1.16964 to 4.85
+    Parameter "Eg0_300" is modified from 1.12416 to 4.85
+    Parameter "alpha" is modified from 0.000473 to 0
+    Parameter "beta" is modified from 636 to 0
+  Model: "ConstantMobility_electron"
+    Parameter "Exponent" is modified from 2.5 to 2.4
+    Parameter "mumax" is modified from 1417 to 118
+  Model: "ConstantMobility_hole"
+    Parameter "Exponent" is modified from 2.2 to 2.15
+    Parameter "mumax" is modified from 470.5 to 20
+  Model: "DOSMass_electron"
+    Parameter "Nc300" is modified from 2.89e+19 to 3.718e+18
+  Model: "DOSMass_hole"
+    Parameter "Nv300" is modified from 3.14e+19 to 2.411e+19
+  Model: "Epsilon"
+    Parameter "epsilon" is modified from 11.7 to 10.2
+  Model: "Epsilon_aniso"
+    Parameter "epsilon" is modified from 11.7 to 10.2
+  Model: "HighFieldDependence_electron"
+    Parameter "beta0" is modified from 1.109 to 1.2
+    Parameter "betaexp" is modified from 0.66 to 1
+    Parameter "vsat0" is modified from 1.07e+07 to 1.2e+07
+    Parameter "vsatexp" is modified from 0.87 to 0.44
+  Model: "HighFieldDependence_hole"
+    Parameter "beta0" is modified from 1.213 to 1.2
+    Parameter "betaexp" is modified from 0.17 to 1
+    Parameter "vsat0" is modified from 8.37e+06 to 1.2e+07
+    Parameter "vsatexp" is modified from 0.52 to 0.44
+  Model: "Ionization"
+    Parameter "E_Nref_SiliconActiveConcentration" is new with value equal to 2e+18
+    Parameter "E_Nref_SiliconConcentration" is new with value equal to 2e+18
+    Parameter "E_Nref_TinActiveConcentration" is new with value equal to 2e+18
+    Parameter "E_Nref_TinConcentration" is new with value equal to 2e+18
+    Parameter "E_SiliconActiveConcentration_0" is new with value equal to 0.11
+    Parameter "E_SiliconConcentration_0" is new with value equal to 0.11
+    Parameter "E_TinActiveConcentration_0" is new with value equal to 0.11
+    Parameter "E_TinConcentration_0" is new with value equal to 0.11
+    Parameter "E_pow_SiliconActiveConcentration" is new with value equal to 2
+    Parameter "E_pow_SiliconConcentration" is new with value equal to 2
+    Parameter "E_pow_TinActiveConcentration" is new with value equal to 2
+    Parameter "E_pow_TinConcentration" is new with value equal to 2
+    Parameter "alpha_SiliconActiveConcentration" is new with value equal to 3.6e-08
+    Parameter "alpha_SiliconConcentration" is new with value equal to 3.6e-08
+    Parameter "alpha_TinActiveConcentration" is new with value equal to 3.6e-08
+    Parameter "alpha_TinConcentration" is new with value equal to 3.6e-08
+    Parameter "b_Nref_SiliconActiveConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_SiliconConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_TinActiveConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_TinConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_min_SiliconActiveConcentration" is new with value equal to 0
+    Parameter "b_Nref_min_SiliconConcentration" is new with value equal to 0
+    Parameter "b_Nref_min_TinActiveConcentration" is new with value equal to 0
+    Parameter "b_Nref_min_TinConcentration" is new with value equal to 0
+    Parameter "b_T_SiliconActiveConcentration" is new with value equal to 0
+    Parameter "b_T_SiliconConcentration" is new with value equal to 0
+    Parameter "b_T_TinActiveConcentration" is new with value equal to 0
+    Parameter "b_T_TinConcentration" is new with value equal to 0
+    Parameter "b_gamma_SiliconActiveConcentration" is new with value equal to 1
+    Parameter "b_gamma_SiliconConcentration" is new with value equal to 1
+    Parameter "b_gamma_TinActiveConcentration" is new with value equal to 1
+    Parameter "b_gamma_TinConcentration" is new with value equal to 1
+    Parameter "b_pow_SiliconActiveConcentration" is new with value equal to 2
+    Parameter "b_pow_SiliconConcentration" is new with value equal to 2
+    Parameter "b_pow_TinActiveConcentration" is new with value equal to 2
+    Parameter "b_pow_TinConcentration" is new with value equal to 2
+    Parameter "beta_SiliconActiveConcentration" is new with value equal to 0
+    Parameter "beta_SiliconConcentration" is new with value equal to 0
+    Parameter "beta_TinActiveConcentration" is new with value equal to 0
+    Parameter "beta_TinConcentration" is new with value equal to 0
+    Parameter "g_SiliconActiveConcentration" is new with value equal to 2
+    Parameter "g_SiliconConcentration" is new with value equal to 2
+    Parameter "g_TinActiveConcentration" is new with value equal to 2
+    Parameter "g_TinConcentration" is new with value equal to 2
+    Parameter "gamma_SiliconActiveConcentration" is new with value equal to 1
+    Parameter "gamma_SiliconConcentration" is new with value equal to 1
+    Parameter "gamma_TinActiveConcentration" is new with value equal to 1
+    Parameter "gamma_TinConcentration" is new with value equal to 1
+    Parameter "x_SiliconActiveConcentration" is new with value equal to 1e-12
+    Parameter "x_SiliconConcentration" is new with value equal to 1e-12
+    Parameter "x_TinActiveConcentration" is new with value equal to 1e-12
+    Parameter "x_TinConcentration" is new with value equal to 1e-12
+  Model: "Kappa"
+    Parameter "1/kappa" is modified from 0.03 to 0.0917
+    Parameter "1/kappa_b" is modified from 0 to 0.000275
+    Parameter "1/kappa_c" is modified from 0 to 1.3e-06
+  Model: "LatticeHeatCapacity"
+    Parameter "cv" is modified from 1.63 to 0.56
+    Parameter "cv_b" is modified from 0 to 0.02242
+    Parameter "cv_c" is modified from 0 to -3.13e-05
+    Parameter "cv_d" is modified from 0 to 1.546e-08
+  Model: "Roulston"
+    Parameter "A_n" is modified from 0 to 1.791e-08
+    Parameter "A_p" is modified from 0 to -3.507e-08
+    Parameter "B_n" is modified from 0 to 8.927e-07
+    Parameter "B_p" is modified from 0 to 2.312e-06
+    Parameter "C_n" is modified from 0 to 2.2e-12
+    Parameter "C_p" is modified from 0 to 6.74e-12
+    Parameter "D_n" is modified from 0 to 6.24e-12
+    Parameter "D_p" is modified from 0 to 1.07e-12
+  Model: "Scharfetter"
+    Parameter "Nref_e" is modified from 1e+16 to 3e+17
+    Parameter "Nref_h" is modified from 1e+16 to 3e+17
+    Parameter "Talpha_e" is modified from -1.5 to 1.72
+    Parameter "Talpha_h" is modified from -1.5 to 1.72
+    Parameter "gamma_e" is modified from 1 to 0.3
+    Parameter "gamma_h" is modified from 1 to 0.3
+    Parameter "taumax_e" is modified from 1e-05 to 2.5e-06
+    Parameter "taumax_h" is modified from 3e-06 to 5e-07
+  Model: "Slotboom"
+    Parameter "Ebgn" is modified from 0 to 0.009
+  Using default lattice crystal coordinate system:
+    effective LatticeParameters:
+      X = (1, 0.0000e+00, 0.0000e+00)
+      Y = (0.0000e+00, 1, 0.0000e+00)
+      Z = (0.0000e+00, 0.0000e+00, 1)
+
+=======
+Region: "GaN_con"
+  (material is "GaN")
+=======
+  Model: "Auger"
+    Parameter "A_e" is modified from 6.7e-32 to 5e-31
+    Parameter "A_h" is modified from 7.2e-32 to 2e-31
+    Parameter "B_e" is modified from 2.45e-31 to 0
+    Parameter "B_h" is modified from 4.5e-33 to 0
+    Parameter "C_e" is modified from -2.2e-32 to 0
+    Parameter "C_h" is modified from 2.63e-32 to 0
+    Parameter "H_e" is modified from 3.46667 to 0
+    Parameter "H_h" is modified from 8.25688 to 0
+  Model: "Bandgap"
+    Parameter "Bgn2Chi" is modified from 0.5 to 0
+    Parameter "Chi0" is modified from 4.05 to 4
+    Parameter "Chi0_300" is modified from 4.07274 to 4
+    Parameter "Eg0" is modified from 1.16964 to 4.85
+    Parameter "Eg0_300" is modified from 1.12416 to 4.85
+    Parameter "alpha" is modified from 0.000473 to 0
+    Parameter "beta" is modified from 636 to 0
+  Model: "ConstantMobility_electron"
+    Parameter "Exponent" is modified from 2.5 to 2.4
+    Parameter "mumax" is modified from 1417 to 118
+  Model: "ConstantMobility_hole"
+    Parameter "Exponent" is modified from 2.2 to 2.15
+    Parameter "mumax" is modified from 470.5 to 20
+  Model: "DOSMass_electron"
+    Parameter "Nc300" is modified from 2.89e+19 to 3.718e+18
+  Model: "DOSMass_hole"
+    Parameter "Nv300" is modified from 3.14e+19 to 2.411e+19
+  Model: "Epsilon"
+    Parameter "epsilon" is modified from 9.5 to 10.2
+  Model: "Epsilon_aniso"
+    Parameter "epsilon" is modified from 10.4 to 10.2
+  Model: "HighFieldDependence_electron"
+    Parameter "beta0" is modified from 1.109 to 1.2
+    Parameter "betaexp" is modified from 0.66 to 1
+    Parameter "vsat0" is modified from 1.07e+07 to 1.2e+07
+    Parameter "vsatexp" is modified from 0.87 to 0.44
+  Model: "HighFieldDependence_hole"
+    Parameter "beta0" is modified from 1.213 to 1.2
+    Parameter "betaexp" is modified from 0.17 to 1
+    Parameter "vsat0" is modified from 8.37e+06 to 1.2e+07
+    Parameter "vsatexp" is modified from 0.52 to 0.44
+  Model: "Ionization"
+    Parameter "E_Nref_SiliconActiveConcentration" is new with value equal to 2e+18
+    Parameter "E_Nref_SiliconConcentration" is new with value equal to 2e+18
+    Parameter "E_Nref_TinActiveConcentration" is new with value equal to 2e+18
+    Parameter "E_Nref_TinConcentration" is new with value equal to 2e+18
+    Parameter "E_SiliconActiveConcentration_0" is new with value equal to 0.11
+    Parameter "E_SiliconConcentration_0" is new with value equal to 0.11
+    Parameter "E_TinActiveConcentration_0" is new with value equal to 0.11
+    Parameter "E_TinConcentration_0" is new with value equal to 0.11
+    Parameter "E_pow_SiliconActiveConcentration" is new with value equal to 2
+    Parameter "E_pow_SiliconConcentration" is new with value equal to 2
+    Parameter "E_pow_TinActiveConcentration" is new with value equal to 2
+    Parameter "E_pow_TinConcentration" is new with value equal to 2
+    Parameter "alpha_SiliconActiveConcentration" is new with value equal to 3.6e-08
+    Parameter "alpha_SiliconConcentration" is new with value equal to 3.6e-08
+    Parameter "alpha_TinActiveConcentration" is new with value equal to 3.6e-08
+    Parameter "alpha_TinConcentration" is new with value equal to 3.6e-08
+    Parameter "b_Nref_SiliconActiveConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_SiliconConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_TinActiveConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_TinConcentration" is new with value equal to 6e+18
+    Parameter "b_Nref_min_SiliconActiveConcentration" is new with value equal to 0
+    Parameter "b_Nref_min_SiliconConcentration" is new with value equal to 0
+    Parameter "b_Nref_min_TinActiveConcentration" is new with value equal to 0
+    Parameter "b_Nref_min_TinConcentration" is new with value equal to 0
+    Parameter "b_T_SiliconActiveConcentration" is new with value equal to 0
+    Parameter "b_T_SiliconConcentration" is new with value equal to 0
+    Parameter "b_T_TinActiveConcentration" is new with value equal to 0
+    Parameter "b_T_TinConcentration" is new with value equal to 0
+    Parameter "b_gamma_SiliconActiveConcentration" is new with value equal to 1
+    Parameter "b_gamma_SiliconConcentration" is new with value equal to 1
+    Parameter "b_gamma_TinActiveConcentration" is new with value equal to 1
+    Parameter "b_gamma_TinConcentration" is new with value equal to 1
+    Parameter "b_pow_SiliconActiveConcentration" is new with value equal to 2
+    Parameter "b_pow_SiliconConcentration" is new with value equal to 2
+    Parameter "b_pow_TinActiveConcentration" is new with value equal to 2
+    Parameter "b_pow_TinConcentration" is new with value equal to 2
+    Parameter "beta_SiliconActiveConcentration" is new with value equal to 0
+    Parameter "beta_SiliconConcentration" is new with value equal to 0
+    Parameter "beta_TinActiveConcentration" is new with value equal to 0
+    Parameter "beta_TinConcentration" is new with value equal to 0
+    Parameter "g_SiliconActiveConcentration" is new with value equal to 2
+    Parameter "g_SiliconConcentration" is new with value equal to 2
+    Parameter "g_TinActiveConcentration" is new with value equal to 2
+    Parameter "g_TinConcentration" is new with value equal to 2
+    Parameter "gamma_SiliconActiveConcentration" is new with value equal to 1
+    Parameter "gamma_SiliconConcentration" is new with value equal to 1
+    Parameter "gamma_TinActiveConcentration" is new with value equal to 1
+    Parameter "gamma_TinConcentration" is new with value equal to 1
+    Parameter "x_SiliconActiveConcentration" is new with value equal to 1e-12
+    Parameter "x_SiliconConcentration" is new with value equal to 1e-12
+    Parameter "x_TinActiveConcentration" is new with value equal to 1e-12
+    Parameter "x_TinConcentration" is new with value equal to 1e-12
+  Model: "Kappa"
+    Parameter "1/kappa" is modified from 0.03 to 0.0917
+    Parameter "1/kappa_b" is modified from 0 to 0.000275
+    Parameter "1/kappa_c" is modified from 0 to 1.3e-06
+  Model: "LatticeHeatCapacity"
+    Parameter "cv" is modified from 1.63 to 0.56
+    Parameter "cv_b" is modified from 0 to 0.02242
+    Parameter "cv_c" is modified from 0 to -3.13e-05
+    Parameter "cv_d" is modified from 0 to 1.546e-08
+  Model: "Roulston"
+    Parameter "A_n" is modified from 0 to 1.791e-08
+    Parameter "A_p" is modified from 0 to -3.507e-08
+    Parameter "B_n" is modified from 0 to 8.927e-07
+    Parameter "B_p" is modified from 0 to 2.312e-06
+    Parameter "C_n" is modified from 0 to 2.2e-12
+    Parameter "C_p" is modified from 0 to 6.74e-12
+    Parameter "D_n" is modified from 0 to 6.24e-12
+    Parameter "D_p" is modified from 0 to 1.07e-12
+  Model: "Scharfetter"
+    Parameter "Nref_e" is modified from 1e+16 to 3e+17
+    Parameter "Nref_h" is modified from 1e+16 to 3e+17
+    Parameter "Talpha_e" is modified from -1.5 to 1.72
+    Parameter "Talpha_h" is modified from -1.5 to 1.72
+    Parameter "gamma_e" is modified from 1 to 0.3
+    Parameter "gamma_h" is modified from 1 to 0.3
+    Parameter "taumax_e" is modified from 1e-05 to 2.5e-06
+    Parameter "taumax_h" is modified from 3e-06 to 5e-07
+  Model: "Slotboom"
+    Parameter "Ebgn" is modified from 0 to 0.009
+  Using default lattice crystal coordinate system:
+    effective LatticeParameters:
+      X = (1, 0.0000e+00, 0.0000e+00)
+      Y = (0.0000e+00, 1, 0.0000e+00)
+      Z = (0.0000e+00, 0.0000e+00, 1)
+
+================
+RegionInterface: "Ga2O3_epi/Ga2O3_base"
+  (material interface is "Ga2O3/Ga2O3")
+================
+  Constants are not modified and equal to default ones
+
+================
+RegionInterface: "Ga2O3_epi/GaN_con"
+  (material interface is "Ga2O3/GaN")
+================
+  Constants are not modified and equal to default ones
+
+==========
+Electrode: "Bottom"
+==========
+  Model: "Bandgap"
+    Parameter "Bgn2Chi" is modified from 0.5 to 0
+    Parameter "Chi0" is modified from 15.95 to 4
+    Parameter "Chi0_300" is modified from 15.95 to 4
+    Parameter "Eg0" is modified from 0 to 4.85
+    Parameter "Eg0_300" is modified from 0 to 4.85
+
+==========
+Electrode: "Top"
+==========
+  Model: "Bandgap"
+    Parameter "Bgn2Chi" is modified from 0.5 to 0
+    Parameter "Chi0" is modified from 15.95 to 4
+    Parameter "Chi0_300" is modified from 15.95 to 4
+    Parameter "Eg0" is modified from 0 to 4.85
+    Parameter "Eg0_300" is modified from 0 to 4.85
+
+
+Acceptor and donor concentrations (AcceptorConcentration, DonorConcentration):
+    computed based on the following species from the doping file:
+        SiliconActiveConcentration (donor)
+        TinActiveConcentration (donor)
+        MagnesiumActiveConcentration (acceptor)
+Net doping concentration (DopingConcentration):
+    obtained from doping file
+Total doping concentration (TotalConcentration):
+    recomputed from acceptor and donor concentrations
+WARNING: Doping concentration (Nnet) will be recalculated because of incomplete ionization!
+
+
+Thu Sep  3 00:41:45 2026: checked out 1 sdevicemonosemicond license(s)
+
+Barrier definition for Schottky contact "Top" 
+which is putted on two materials: "GaN" and "Ga2O3" !
+
+
+Work function for the contact "Top" should be defined !
+
+
+With Constant Reference Potential:
+  Parameters of Reference Semiconductor:
+    The Electron Affinity: 4
+    The Band Gap: 4.85
+    The Electron DOS: 3.7180e+18
+    The Hole DOS: 2.4110e+19
+  The Constant Reference Potential: 6.40098
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+
+The doping species "MagnesiumActiveConcentration" has no incomplete
+ionization parameters in the parameter file
+(region GaN_con, material GaN) !
+
+Thu Sep  3 00:41:46 2026: checked in 1 sdevicemonosemicond license(s)
+Thu Sep  3 00:41:47 2026: checked in 32 sparallel license(s)
+Thu Sep  3 00:41:49 2026: checked in 32 sdevice-parallel license(s)
+Thu Sep  3 00:41:49 2026: checked in 1 sdevice license(s)

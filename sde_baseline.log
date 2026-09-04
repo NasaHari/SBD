@@ -1,0 +1,78 @@
+Evaluating file sde_baseline.cmd
+---> (define LCon 15)
+LCon
+---> (define LD 25)
+LD
+---> (define WB 10)
+WB
+---> (define GW 0.01)
+GW
+---> (sdegeo:create-rectangle (position 0 0 0) (position LD (+ WB 7) 0) Ga2O3 Ga2O3_base)
+#[body 5 1]
+---> (sdegeo:create-rectangle (position 0 0 0) (position LD 7 0) Ga2O3 Ga2O3_epi)
+#[body 6 1]
+---> (sdegeo:create-rectangle (position 0 0 0) (position LCon GW 0) GaN GaN_con)
+#[body 7 1]
+---> (sdepe:doping-constant-placement BaseDoping TinActiveConcentration 2.5e+18 Ga2O3_base)
+#t
+---> (sdepe:doping-constant-placement EpiDoping SiliconActiveConcentration 1.4e+16 Ga2O3_epi)
+#t
+---> (sdepe:doping-constant-placement ConDoping MagnesiumActiveConcentration 1e+18 GaN_con)
+#t
+---> (sdegeo:define-contact-set Top 4 (color:rgb 1 0 0) 01)
+()
+---> (sdegeo:set-current-contact-set Top)
+""
+---> (sdegeo:define-2d-contact (find-edge-id (position (/ LCon 2) 0 0)) (sdegeo:get-current-contact-set))
+"Obsolete Scheme command: sdegeo:define-2d-contact. Please update your input script and replace it with sdegeo:set-contact."
+---> (sdegeo:define-contact-set Bottom 4 (color:rgb 0 1 0) 10)
+()
+---> (sdegeo:set-current-contact-set Bottom)
+"Top"
+---> (sdegeo:define-2d-contact (find-edge-id (position (/ LD 2) (+ WB 7) 0)) (sdegeo:get-current-contact-set))
+"Obsolete Scheme command: sdegeo:define-2d-contact. Please update your input script and replace it with sdegeo:set-contact."
+---> (sdedr:define-refinement-window RefEvalWin.all Rectangle (position 0 0 0) (position LD (+ WB 7) 0))
+#[body 22 1]
+---> (sdedr:define-refinement-size Mesh_all 10 10 10 10)
+#t
+---> (sdedr:define-refinement-placement Placement_all Mesh_all RefEvalWin.all)
+#t
+---> (sdedr:define-refinement-window RefEvalWin.Top Rectangle (position 0 0 0) (position LD 0.01 0))
+#[body 23 1]
+---> (sdedr:define-refinement-size Mesh_Top 10 0.0025 10 0.0025)
+#t
+---> (sdedr:define-refinement-placement Placement_Top Mesh_Top RefEvalWin.Top)
+#t
+---> (sdedr:define-refinement-window RefEvalWin.Top2 Rectangle (position 0 0.01 0) (position LD 0.1 0))
+#[body 24 1]
+---> (sdedr:define-refinement-size Mesh_Top2 10 0.01 10 0.01)
+#t
+---> (sdedr:define-refinement-placement Placement_Top2 Mesh_Top2 RefEvalWin.Top2)
+#t
+---> (sdedr:define-refinement-window RefEvalWin.Top3 Rectangle (position 0 0.1 0) (position LD 0.5 0))
+#[body 25 1]
+---> (sdedr:define-refinement-size Mesh_Top3 10 0.1 10 0.1)
+#t
+---> (sdedr:define-refinement-placement Placement_Top3 Mesh_Top3 RefEvalWin.Top3)
+#t
+---> (sdedr:define-refinement-window RefEvalWin.Top4 Rectangle (position 0 0.5 0) (position LD 5 0))
+#[body 26 1]
+---> (sdedr:define-refinement-size Mesh_Top4 10 0.5 10 0.5)
+#t
+---> (sdedr:define-refinement-placement Placement_Top4 Mesh_Top4 RefEvalWin.Top4)
+#t
+---> (sde:build-mesh snmesh  -a  Ga2O3_GaN_SBD_Nd1.4e16_GW0.01_msh.tdr)
+#t
+---> #[end-of-file]
+"************************************************************************"
+"Sentaurus Structure Editor Obsolete commands"
+"Obsolete Scheme command: sdegeo:define-2d-contact. Please update your input script and replace it with sdegeo:set-contact."
+"Obsolete Scheme command: sdegeo:define-2d-contact. Please update your input script and replace it with sdegeo:set-contact."
+"************************************************************************"
+"************************************************************************"
+"Sentaurus Structure Editor "
+"Start Time:    Wed Sep  2 23:05:13 2026"
+"End   Time:    Wed Sep  2 23:05:15 2026"
+"Total Execution Time (sec):    2"
+"Total System calls Time (sec): 0"
+"************************************************************************"
